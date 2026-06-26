@@ -12,7 +12,11 @@
     "wayback-sun11": "https://web.archive.org/web/20060717183854/http://www.midnightsunapp.com/sun11.html",
     "wayback-home": "https://web.archive.org/web/20101207111325/http://midnightsunapp.com/home",
     "wayback-photo-gallery": "https://web.archive.org/web/20101006002425/http://midnightsunapp.com/photo_gallery",
-    "wayback-live-auctions": "https://web.archive.org/web/20161104060003/http://midnightsunapp.com/live_auctions_only"
+    "wayback-live-auctions": "https://web.archive.org/web/20161104060003/http://midnightsunapp.com/live_auctions_only",
+    "source-irs-pub561": "https://www.irs.gov/publications/p561",
+    "source-uspap": "https://appraisalfoundation.org/products/uspap",
+    "source-wa-estate-sales": "https://dor.wa.gov/forms-publications/publications-subject/tax-topics/estate-sales",
+    "source-national-archives-family": "https://www.archives.gov/preservation/family-archives"
   };
 
   document.querySelectorAll("[data-js-link]").forEach(function (control) {

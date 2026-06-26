@@ -261,6 +261,64 @@ h1 {
   line-height: 1.65;
 }
 
+.guide-band {
+  width: min(var(--max), calc(100% - 36px));
+  margin: 0 auto;
+  padding: clamp(54px, 8vw, 90px) 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.guide-band h2 {
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 3.4rem);
+  line-height: 1.08;
+}
+
+.checklist-grid,
+.compact-grid,
+.fact-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.checklist-grid article,
+.compact-grid article,
+.fact-list article {
+  min-height: 172px;
+  padding: 22px;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.checklist-grid h3,
+.compact-grid h3,
+.fact-list h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.checklist-grid p,
+.compact-grid p,
+.fact-list p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.fact-list {
+  align-content: start;
+  margin-top: 0;
+}
+
+.fact-list .source-actions {
+  grid-column: 1 / -1;
+}
+
 .archive-band {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(260px, 0.72fr);
@@ -364,9 +422,26 @@ h1 {
 }
 
 .article-body ul,
-.article-aside ul {
+.article-aside ul,
+.article-body ol {
   margin: 16px 0 0;
   padding-left: 20px;
+}
+
+.article-body strong {
+  color: var(--ink);
+}
+
+.step-list {
+  display: grid;
+  gap: 12px;
+}
+
+.step-list li {
+  padding: 14px 16px;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  background: rgba(8, 22, 31, 0.44);
 }
 
 .article-aside a {
@@ -416,9 +491,16 @@ h1 {
   .status-band,
   .section,
   .principles-grid,
+  .checklist-grid,
+  .compact-grid,
+  .fact-list,
   .archive-band,
   .article-layout {
     grid-template-columns: 1fr;
+  }
+
+  .fact-list {
+    margin-top: 28px;
   }
 
   .status-item {
