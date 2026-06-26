@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Midnight Sun App</title>
+  <meta name="description" content="Midnight Sun App is preparing a calm, focused digital experience.">
+  <link rel="canonical" href="https://midnightsunapp.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Midnight Sun App">
+  <meta property="og:description" content="A calm, focused digital experience is being prepared.">
+  <meta property="og:url" content="https://midnightsunapp.com/">
+  <meta property="og:image" content="https://midnightsunapp.com/assets/midnight-sun-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header" aria-label="Site header">
+    <a class="brand" href="/" aria-label="Midnight Sun App home">
+      <span class="brand-mark" aria-hidden="true">MS</span>
+      <span>Midnight Sun App</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#status">Status</a>
+      <a href="#principles">Principles</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="/assets/midnight-sun-hero.png" alt="Midnight sun over calm northern water">
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Private launch page</p>
+        <h1 id="hero-title">Midnight Sun App</h1>
+        <p class="hero-copy">A calm, focused digital experience is being prepared at midnightsunapp.com.</p>
+        <div class="hero-actions" aria-label="Page sections">
+          <a class="button primary" href="#status">View status</a>
+          <a class="button secondary" href="#principles">Read principles</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="status-band" id="status" aria-label="Launch status">
+      <div class="status-item">
+        <strong>Domain</strong>
+        <span>midnightsunapp.com</span>
+      </div>
+      <div class="status-item">
+        <strong>Platform</strong>
+        <span>Cloudflare Pages</span>
+      </div>
+      <div class="status-item">
+        <strong>Runtime</strong>
+        <span>Static site</span>
+      </div>
+    </section>
+
+    <section class="section" id="principles" aria-labelledby="principles-title">
+      <div class="section-copy">
+        <p class="eyebrow">Product direction</p>
+        <h2 id="principles-title">Quiet by default, useful on purpose.</h2>
+        <p>Midnight Sun App will keep its first public page simple while the product takes shape. The site is set up to ship through Git-backed static deploys, so future updates can move from repository to production without a manual upload step.</p>
+      </div>
+      <div class="principles-grid">
+        <article class="principle">
+          <h3>Focused</h3>
+          <p>Clear surfaces, direct language, and no unnecessary noise.</p>
+        </article>
+        <article class="principle">
+          <h3>Durable</h3>
+          <p>Static delivery keeps the first deployment fast and easy to maintain.</p>
+        </article>
+        <article class="principle">
+          <h3>Ready</h3>
+          <p>The repository can evolve into a fuller landing page as soon as product details are available.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
